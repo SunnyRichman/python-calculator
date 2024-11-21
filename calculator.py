@@ -8,13 +8,13 @@ class Calculator:
     def multiply(self, a, b):
         result = 0
         for i in range(b):
-            result = self.add(result, a)
+            result += a
         return result
 
     def divide(self, a, b):
         result = 0
         while a >= b:
-            a = self.subtract(b, a)
+            a -= b
             result += 1
         return result
     
